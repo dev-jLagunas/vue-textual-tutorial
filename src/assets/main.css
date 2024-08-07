@@ -31,3 +31,11 @@ Custom Tailwind Groups
 .custom-container-width {
   @apply w-90vw mx-auto lg:w-4/5;
 }
+
+.custom-header-styles {
+  @apply text-5xl font-bold;
+}
+
+.custom-paragraph-styles {
+  @apply text-sm my-4 text-slate-100;
+}
