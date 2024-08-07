@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <h1 class="text-8xl">testing</h1>
+  <router-view></router-view>
 </template>
 
 <style scoped></style>

@@ -24,3 +24,10 @@ body {
   background-color: #191919;
   color: #f5f7f8;
 }
+
+/*************************************************
+Custom Tailwind Groups
+*************************************************/
+.custom-container-width {
+  @apply w-90vw mx-auto lg:w-4/5;
+}
