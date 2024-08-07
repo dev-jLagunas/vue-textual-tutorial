@@ -1,0 +1,26 @@
+/***********************************************
+CSS Reset
+*************************************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/***********************************************
+CSS Reset
+*************************************************/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***********************************************
+Global Styles
+*************************************************/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #191919;
+  color: #f5f7f8;
+}
