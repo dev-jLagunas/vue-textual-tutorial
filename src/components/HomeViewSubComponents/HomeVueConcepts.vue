@@ -40,6 +40,7 @@ const vueConceptsList = ref([
     description:
       "Introduction to the Composition API, including the setup function, reactive variables, computed properties, and lifecycle hooks.",
     textColorClass: "text-purple-500",
+    link: "/composition-api",
   },
   {
     id: 6,
@@ -47,6 +48,7 @@ const vueConceptsList = ref([
     description:
       "Handling user input, form input bindings, and validation techniques.",
     textColorClass: "text-indigo-500",
+    link: "/forms-and-input",
   },
   {
     id: 7,
@@ -54,6 +56,7 @@ const vueConceptsList = ref([
     description:
       "Overview of state management in Vue, including simple state management and using the Composition API.",
     textColorClass: "text-pink-500",
+    link: "/state-management",
   },
   {
     id: 8,
@@ -61,6 +64,7 @@ const vueConceptsList = ref([
     description:
       "Basics of Vue Router, defining routes, navigating between routes, and using nested routes.",
     textColorClass: "text-teal-500",
+    link: "/routing",
   },
   {
     id: 9,
@@ -68,6 +72,7 @@ const vueConceptsList = ref([
     description:
       "Using Axios or Fetch API to make HTTP requests and handle responses and errors.",
     textColorClass: "text-gray-500",
+    link: "/http-requests",
   },
   {
     id: 10,
@@ -75,6 +80,7 @@ const vueConceptsList = ref([
     description:
       "Overview of built-in directives and creating custom directives.",
     textColorClass: "text-orange-500",
+    link: "/directives",
   },
   {
     id: 11,
@@ -82,12 +88,14 @@ const vueConceptsList = ref([
     description:
       "Basics of Vue transitions, element transitions, and animating state changes.",
     textColorClass: "text-cyan-500",
+    link: "/transitions-animations",
   },
   {
     id: 12,
     title: "Plugins",
     description: "Using Vue plugins and creating custom plugins.",
     textColorClass: "text-lime-500",
+    link: "/plugins",
   },
   {
     id: 13,
@@ -95,12 +103,14 @@ const vueConceptsList = ref([
     description:
       "Unit testing components, testing with Vue Test Utils, and end-to-end testing with Cypress.",
     textColorClass: "text-emerald-500",
+    link: "/testing",
   },
   {
     id: 14,
     title: "Deployment",
     description: "Building for production and deploying Vue apps.",
     textColorClass: "text-fuchsia-500",
+    link: "/deployment",
   },
   {
     id: 15,
@@ -108,6 +118,7 @@ const vueConceptsList = ref([
     description:
       "Code organization, performance optimization, and security considerations.",
     textColorClass: "text-rose-500",
+    link: "/best-practices",
   },
   {
     id: 16,
@@ -115,6 +126,7 @@ const vueConceptsList = ref([
     description:
       "Practical examples like a todo app, weather app, real-time chat app, and e-commerce product list.",
     textColorClass: "text-violet-500",
+    link: "/examples",
   },
 ]);
 </script>

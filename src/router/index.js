@@ -13,6 +13,23 @@ const TemplateSyntax = () =>
   import("@/components/BasicConceptsSubComponents/TemplateSyntax.vue");
 const DataBinding = () =>
   import("@/components/BasicConceptsSubComponents/DataBinding.vue");
+const CompositionApiView = () =>
+  import("@/views/CompositionAPI/CompositionApiView.vue");
+const FormsInputView = () => import("@/views/FormsAndInput/FormsInputView.vue");
+const StateManagementView = () =>
+  import("@/views/StateManagement/StateManagementView.vue");
+const RoutingView = () => import("@/views/Routing/RoutingView.vue");
+const HttpRequestsView = () =>
+  import("@/views/HttpRequests/HttpRequestsView.vue");
+const DirectivesView = () => import("@/views/Directives/DirectivesView.vue");
+const TransitionsAnimationsView = () =>
+  import("@/views/TransitionsAnimations/TransitionsAnimationsView.vue");
+const PluginsView = () => import("@/views/Plugins/PluginsView.vue");
+const TestingView = () => import("@/views/Testing/TestingView.vue");
+const DeploymentView = () => import("@/views/Deployment/DeploymentView.vue");
+const BestPracticesView = () =>
+  import("@/views/BestPractices/BestPracticesView.vue");
+const ExamplesView = () => import("@/views/Examples/ExamplesView.vue");
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -51,6 +68,71 @@ const router = createRouter({
       path: "/components-info",
       name: "ComponentsInfo",
       component: ComponentsInfoView,
+    },
+    {
+      path: "/composition-api",
+      name: "CompositionApi",
+      component: CompositionApiView,
+    },
+    {
+      path: "/forms-and-input",
+      name: "FormsAndInput",
+      component: FormsInputView,
+    },
+    {
+      path: "/forms-and-input",
+      name: "FormsAndInput",
+      component: FormsInputView,
+    },
+    {
+      path: "/state-management",
+      name: "StateManagement",
+      component: StateManagementView,
+    },
+    {
+      path: "/routing",
+      name: "Routing",
+      component: RoutingView,
+    },
+    {
+      path: "/http-requests",
+      name: "HttpRequests",
+      component: HttpRequestsView,
+    },
+    {
+      path: "/directives",
+      name: "Directives",
+      component: DirectivesView,
+    },
+    {
+      path: "/transitions-animations",
+      name: "TransitionsAnimations",
+      component: TransitionsAnimationsView,
+    },
+    {
+      path: "/plugins",
+      name: "Plugins",
+      component: PluginsView,
+    },
+    {
+      path: "/testing",
+      name: "Testing",
+      component: TestingView,
+    },
+    {
+      path: "/deployment",
+      name: "Deployment",
+      component: DeploymentView,
+    },
+    {
+      path: "/best-practices",
+      name: "BestPractices",
+      component: BestPracticesView,
+    },
+    {
+      path: "/examples",
+      name: "Examples",
+      component: ExamplesView,
     },
   ],
 });

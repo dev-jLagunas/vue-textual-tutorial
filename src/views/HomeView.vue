@@ -5,7 +5,7 @@ import HomeVueConcepts from "@/components/HomeViewSubComponents/HomeVueConcepts.
 </script>
 
 <template>
-  <div class="custom-container-width">
+  <div>
     <HomeHeader></HomeHeader>
     <HomeFaqDetails></HomeFaqDetails>
     <HomeVueConcepts></HomeVueConcepts>

@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <router-view></router-view>
+  <section class="custom-container-width">
+    <router-view></router-view>
+  </section>
 </template>
 
 <style scoped></style>
