@@ -43,3 +43,7 @@ Custom Tailwind Groups
 .custom-paragraph-styles {
   @apply text-sm  text-slate-100;
 }
+
+.custom-list-styles {
+  @apply flex flex-col gap-3;
+}

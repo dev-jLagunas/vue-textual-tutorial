@@ -14,7 +14,7 @@ const vueConceptsList = ref([
     id: 2,
     title: "Basic Concepts",
     description:
-      "Covers the Vue instance, template syntax, data binding, conditional rendering, list rendering, and event handling.",
+      "Covers the basics like template syntax, data binding, conditional rendering, list rendering, and event handling.",
     textColorClass: "text-green-500",
     link: "/basic-concepts",
   },
