@@ -8,6 +8,7 @@ const vueConceptsList = ref([
     description:
       "Introduction to Vue, setting up the development environment, and creating a Vue project with the Vue CLI.",
     textColorClass: "text-blue-500",
+    link: "/getting-started",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const vueConceptsList = ref([
     description:
       "Covers the Vue instance, template syntax, data binding, conditional rendering, list rendering, and event handling.",
     textColorClass: "text-green-500",
+    link: "/basic-concepts",
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const vueConceptsList = ref([
     description:
       "Learn about data properties, methods, computed properties, and watchers.",
     textColorClass: "text-red-500",
+    link: "/reactivity-system",
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ const vueConceptsList = ref([
     description:
       "Creating and registering components, parent-child communication, and using slots.",
     textColorClass: "text-yellow-500",
+    link: "/components-info",
   },
   {
     id: 5,
@@ -121,10 +125,12 @@ const vueConceptsList = ref([
     <ul class="flex flex-col gap-3">
       <li v-for="concept in vueConceptsList" :key="concept.id" class="">
         <h2 class="font-semibold">
-          <i
-            :class="['fa-solid fa-angles-right pr-2', concept.textColorClass]"
-          ></i
-          >{{ concept.title }}
+          <router-link :to="concept.link">
+            <i
+              :class="['fa-solid fa-angles-right pr-2', concept.textColorClass]"
+            ></i
+            >{{ concept.title }}
+          </router-link>
         </h2>
         <p class="custom-paragraph-styles">{{ concept.description }}</p>
       </li>
