@@ -25,7 +25,7 @@ const questions = [
     question: "What can I expect from this project?",
     answer: `This textual tutorial will be filled with simple, easy to understand explanations of all the must know Vue topics followed by step by step examples of how to use those concepts.
     You will also find links to other resources that I found useful in my research. The majority of this tutorial will be written using the official Vue documentation as reference. It is
-    also important to mentioned that this tutorial will be first and foremost be focused on the pratical usage of Vue. Thus, less commonly used features will also be covered, but not until the
+    also important to mentioned that this tutorial will be first and foremost focused on the pratical usage of Vue. Thus, less commonly used features will also be covered, but not until the
     end of the tutorial in a more advanced concepts section. I will make note of this in each section so users are aware. `,
   },
   {
@@ -60,7 +60,7 @@ const toggle = (index) => {
       </article>
       <article
         v-if="activeIndex === index"
-        class="text-sm mb-2 pb-2 border-b border-b-slate-600 text-slate-200"
+        class="text-sm mb-2 pb-2 border-b border-b-slate-600 text-slate-200 indent-4"
       >
         {{ question.answer }}
       </article>

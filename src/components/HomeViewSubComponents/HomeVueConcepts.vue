@@ -1,5 +1,133 @@
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+const vueConceptsList = ref([
+  {
+    id: 1,
+    title: "Getting Started",
+    description:
+      "Introduction to Vue, setting up the development environment, and creating a Vue project with the Vue CLI.",
+    textColorClass: "text-blue-500",
+  },
+  {
+    id: 2,
+    title: "Basic Concepts",
+    description:
+      "Covers the Vue instance, template syntax, data binding, conditional rendering, list rendering, and event handling.",
+    textColorClass: "text-green-500",
+  },
+  {
+    id: 3,
+    title: "Reactivity System",
+    description:
+      "Learn about data properties, methods, computed properties, and watchers.",
+    textColorClass: "text-red-500",
+  },
+  {
+    id: 4,
+    title: "Components",
+    description:
+      "Creating and registering components, parent-child communication, and using slots.",
+    textColorClass: "text-yellow-500",
+  },
+  {
+    id: 5,
+    title: "Composition API",
+    description:
+      "Introduction to the Composition API, including the setup function, reactive variables, computed properties, and lifecycle hooks.",
+    textColorClass: "text-purple-500",
+  },
+  {
+    id: 6,
+    title: "Forms and Input Handling",
+    description:
+      "Handling user input, form input bindings, and validation techniques.",
+    textColorClass: "text-indigo-500",
+  },
+  {
+    id: 7,
+    title: "State Management",
+    description:
+      "Overview of state management in Vue, including simple state management and using the Composition API.",
+    textColorClass: "text-pink-500",
+  },
+  {
+    id: 8,
+    title: "Routing",
+    description:
+      "Basics of Vue Router, defining routes, navigating between routes, and using nested routes.",
+    textColorClass: "text-teal-500",
+  },
+  {
+    id: 9,
+    title: "HTTP Requests",
+    description:
+      "Using Axios or Fetch API to make HTTP requests and handle responses and errors.",
+    textColorClass: "text-gray-500",
+  },
+  {
+    id: 10,
+    title: "Directives",
+    description:
+      "Overview of built-in directives and creating custom directives.",
+    textColorClass: "text-orange-500",
+  },
+  {
+    id: 11,
+    title: "Transitions and Animations",
+    description:
+      "Basics of Vue transitions, element transitions, and animating state changes.",
+    textColorClass: "text-cyan-500",
+  },
+  {
+    id: 12,
+    title: "Plugins",
+    description: "Using Vue plugins and creating custom plugins.",
+    textColorClass: "text-lime-500",
+  },
+  {
+    id: 13,
+    title: "Testing",
+    description:
+      "Unit testing components, testing with Vue Test Utils, and end-to-end testing with Cypress.",
+    textColorClass: "text-emerald-500",
+  },
+  {
+    id: 14,
+    title: "Deployment",
+    description: "Building for production and deploying Vue apps.",
+    textColorClass: "text-fuchsia-500",
+  },
+  {
+    id: 15,
+    title: "Best Practices",
+    description:
+      "Code organization, performance optimization, and security considerations.",
+    textColorClass: "text-rose-500",
+  },
+  {
+    id: 16,
+    title: "Examples",
+    description:
+      "Practical examples like a todo app, weather app, real-time chat app, and e-commerce product list.",
+    textColorClass: "text-violet-500",
+  },
+]);
+</script>
 
 <template>
-  <h1>home concepts here</h1>
+  <div>
+    <h1 class="custom-subheading-styles my-4">Vue Concepts</h1>
+    <ul class="flex flex-col gap-3">
+      <li v-for="concept in vueConceptsList" :key="concept.id" class="">
+        <h2 class="font-semibold">
+          <i
+            :class="['fa-solid fa-angles-right pr-2', concept.textColorClass]"
+          ></i
+          >{{ concept.title }}
+        </h2>
+        <p class="custom-paragraph-styles">{{ concept.description }}</p>
+      </li>
+    </ul>
+  </div>
 </template>
