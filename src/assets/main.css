@@ -36,6 +36,10 @@ Custom Tailwind Groups
   @apply text-5xl font-bold;
 }
 
+.custom-subheading-styles {
+  @apply text-3xl font-bold;
+}
+
 .custom-paragraph-styles {
   @apply text-sm my-4 text-slate-100;
 }

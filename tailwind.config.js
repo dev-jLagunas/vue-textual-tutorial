@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         "custom-green": "#379777",
+        "dark-bg": "#191919",
       },
     },
   },
