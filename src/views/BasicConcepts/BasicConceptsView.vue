@@ -2,6 +2,11 @@
 import { ref } from "vue";
 import ConceptsHeader from "@/components/SharedComponents/ConceptsHeader.vue";
 
+// Props Data
+const title = "Basic Components";
+const description =
+  "Here you can learn more about the very basics of Vue such as template syntax, data binding, and control flow.";
+
 const subcategories = ref([
   {
     id: 1,
@@ -20,10 +25,7 @@ const subcategories = ref([
 <template>
   <div>
     <section>
-      <ConceptsHeader
-        title="Basic Concepts"
-        description="Here you can learn more about the very basics of Vue such as template syntax, data binding, and control flow."
-      />
+      <ConceptsHeader :title="title" :description="description" />
     </section>
     <ul class="custom-list-styles mt-4">
       <li

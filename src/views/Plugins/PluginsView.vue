@@ -1,5 +1,15 @@
-<script setup></script>
+<script setup>
+import ConceptsHeader from "@/components/SharedComponents/ConceptsHeader.vue";
+
+// Props Data
+const title = "Plugins Information";
+const description = "Here we will go over useful Vue plugins";
+</script>
 
 <template>
-  <h1>plugins component</h1>
+  <div>
+    <section>
+      <ConceptsHeader :title="title" :description="description" />
+    </section>
+  </div>
 </template>

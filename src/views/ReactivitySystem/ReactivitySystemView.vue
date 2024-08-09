@@ -1,5 +1,15 @@
-<script setup></script>
+<script setup>
+import ConceptsHeader from "@/components/SharedComponents/ConceptsHeader.vue";
+//Props Data
+const title = "Reactivity System";
+const description =
+  "Here we will go in depth about the reactivity system Vue implements.";
+</script>
 
 <template>
-  <h3>Reactivity test</h3>
+  <div>
+    <section>
+      <ConceptsHeader :title="title" :description="description" />
+    </section>
+  </div>
 </template>

@@ -1,5 +1,15 @@
-<script setup></script>
+<script setup>
+import ConceptsHeader from "@/components/SharedComponents/ConceptsHeader.vue";
+
+// Props Data
+const title = "Best Practices";
+const description = "Here we will go over the Vue recommend best practices.";
+</script>
 
 <template>
-  <h1>best practices component</h1>
+  <div>
+    <section>
+      <ConceptsHeader :title="title" :description="description" />
+    </section>
+  </div>
 </template>
